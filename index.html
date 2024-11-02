@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Time App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>World Time App</h1>
+
+    <select id="citySelect" onchange="showTime()">
+      <option value="" disabled selected>Select a city</option>
+      <option value="Europe/Paris">Paris 🇫🇷</option>
+      <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+      <option value="Australia/Sydney">Sydney 🇦🇺</option>
+      <option value="current">Your Current Location</option>
+    </select>
+
+    <button onclick="goToHomePage()">Go to Home</button>
+
+    <div class="time-display" id="timeDisplay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
